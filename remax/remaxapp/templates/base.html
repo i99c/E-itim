@@ -85,42 +85,13 @@
       </section>
       <!-- End Partners -->
 
-      <!-- Start Feature -->
-      <section class="features fstyle-2 section-padding">
-        {% include 'components/base/features.html' %}
-      </section>
-      <!-- End Feature -->
-
-      <!-- Start About -->
-      <section class="about">
-        {% include 'components/base/about.html' %}
-      </section>
-      <!-- End About -->
-
-      <!-- Start Counter Up -->
-      <section class="counter-up section-padding">
-        {% include 'components/base/achievements.html' %}
-      </section>
-      <!-- End Counter -->
-
       <!-- Start Courses -->
 
-      <!-- Start Working Process -->
-      <section class="working-process section-padding" style="background-image: url(assets/img/bg/working.png);">
-        {% include 'components/base/working-prosess.html' %}
-      </section>
-      <!-- End Working Process -->
-
       <br />
       <br />
-      <!-- Start FAQ Area -->
-      <section class="faq pb120">
-        {% include 'components/base/faq.html' %}
-      </section>
-      <!-- End FAQ Area -->
 
       <!-- Start Review -->
-      <section class="review section-padding">
+      {% comment %} <section class="review section-padding">
         {% include 'components/base/students-says.html' %}
         <ul class="circles">
           <li></li>
@@ -134,61 +105,13 @@
           <li></li>
           <li></li>
         </ul>
-      </section>
+      </section> {% endcomment %}
       <!-- Start Review -->
 
-      <!-- Start Cta -->
-      {% comment %} <section class="cta">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-6 col-lg-6 col-12 wow fadeIn">
-              <div class="cta-item">
-                <div class="cta-content">
-                  <h3>Become an <span>Instructor</span></h3>
-                  <p>Top instructors from around the world teach millions of student on Edumon</p>
-                  <a href="#" class="bg_btn bt">Apply Now</a>
-                </div>
-                <img src="{% static 'assets/img/cta/1.png' %}" class="cta_img" alt="cta" />
-                <div class="cta_shape">
-                  <svg fill="none" viewBox="0 0 164 176">
-                    <circle cx="89" cy="88" r="74" fill="#fff" />
-                    <mask id="a" width="178" height="178" x="0" y="0" fill="#000" maskUnits="userSpaceOnUse">
-                      <path fill="#fff" d="M0 0h178v178H0z" />
-                      <path d="M177 89c0 48.601-39.399 88-88 88S1 137.601 1 89 40.399 1 89 1s88 39.399 88 88zM26.996 89c0 34.244 27.76 62.004 62.004 62.004s62.004-27.76 62.004-62.004S123.244 26.996 89 26.996 26.996 54.756 26.996 89z" />
-                    </mask>
-                    <path stroke="#0F2B5A" stroke-dasharray="7 7" stroke-linecap="square" stroke-linejoin="round" stroke-width="2" d="M177 89c0 48.601-39.399 88-88 88S1 137.601 1 89 40.399 1 89 1s88 39.399 88 88zM26.996 89c0 34.244 27.76 62.004 62.004 62.004s62.004-27.76 62.004-62.004S123.244 26.996 89 26.996 26.996 54.756 26.996 89z" mask="url(#a)" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <!-- End Col -->
-
-            <div class="col-xl-6 col-lg-6 col-12 wow fadeIn">
-              <div class="cta-item">
-                <div class="cta-content">
-                  <h3>Get Free <span>Courses</span></h3>
-                  <p>Top instructors from around the world teach millions of student on Edumon</p>
-                  <a href="#" class="bg_btn bt">Register</a>
-                </div>
-                <img src="{% static 'assets/img/cta/2.png' %}" class="cta_img" alt="cta" />
-                <div class="cta_shape">
-                  <svg fill="none" viewBox="0 0 164 176">
-                    <circle cx="89" cy="88" r="74" fill="#fff" />
-                    <mask id="a" width="178" height="178" x="0" y="0" fill="#000" maskUnits="userSpaceOnUse">
-                      <path fill="#fff" d="M0 0h178v178H0z" />
-                      <path d="M177 89c0 48.601-39.399 88-88 88S1 137.601 1 89 40.399 1 89 1s88 39.399 88 88zM26.996 89c0 34.244 27.76 62.004 62.004 62.004s62.004-27.76 62.004-62.004S123.244 26.996 89 26.996 26.996 54.756 26.996 89z" />
-                    </mask>
-                    <path stroke="#0F2B5A" stroke-dasharray="7 7" stroke-linecap="square" stroke-linejoin="round" stroke-width="2" d="M177 89c0 48.601-39.399 88-88 88S1 137.601 1 89 40.399 1 89 1s88 39.399 88 88zM26.996 89c0 34.244 27.76 62.004 62.004 62.004s62.004-27.76 62.004-62.004S123.244 26.996 89 26.996 26.996 54.756 26.996 89z" mask="url(#a)" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <!-- End Col -->
-          </div>
-        </div>
-      </section> {% endcomment %}
       <!-- End Cta -->
     {% endblock %}
+    <br />
+    <br />
     <!-- Start Footer -->
     <section class="footer fstyle-2">
       {% include 'components/base/footer.html' %}

@@ -7,4 +7,5 @@ urlpatterns = [
     path('sinif/',views.sinif, name='sinif'),
     path('register/',views.register, name='register'),
     path('login/',views.login, name='login'),
+    path('katilimci/',views.katilimci, name='katilimci'),
 ]

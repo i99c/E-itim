@@ -36,9 +36,58 @@
 
 {% block content %}
   <!-- Start Main Banner -->
-  <section class="main-banner" style="background-image: url(assets/img/bg/banner.jpg)">
-    {% include 'components/soru/container.html' %} {% include 'components/soru/blshape.html' %} {% include 'components/soru/brshape.html' %}
+  <section class="blog section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-8 col-lg-8 col-md-12 col-12 wow fadeIn">
+          <div class="blog-item">
+            <div class="blog-image">
+              <img src="{% static 'assets/img/blog/1.jpg' %}" alt="image" />
+            </div>
+
+            <div class="blog-content">
+              <h3><a href="question-details.html">What is the primary benefit of online learning programs?</a></h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus eget dolor non condimentum. Mauris ac augue eu ex elementum dictum Quisque fermentum augue.</p>
+
+              <div class="question-options">
+                <form action="submit-answer.html" method="post">
+                  <label for="answer">Your Answer:</label><br />
+                  <textarea id="answer" name="answer" rows="6" style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 16px; resize: vertical;"></textarea>
+                  <br /><br />
+                  <button type="submit" class="submit-btn" style="background-color: #0D5FF9; color: white; font-size: 16px; padding: 12px 30px; border-radius: 50px; border: none; cursor: pointer; transition: all 0.3s ease-in-out; text-align: center; display: inline-block; font-family: 'Arial', sans-serif; text-transform: uppercase; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" onmouseover="this.style.backgroundColor='#0D5FF9'; this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.3)'" onmouseout="this.style.backgroundColor='#ff9900'; this.style.transform='scale(1)'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.2)'" onmousedown="this.style.backgroundColor='#0D5FF9'; this.style.transform='scale(0.98)'; this.style.boxShadow='none'" onmouseup="this.style.backgroundColor='#0D5FF9'; this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.3)'">Submit Answer</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 text-center">
+            {% include 'components/soru/pages-numbers.html' %}
+          </div>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-xl-4 col-lg-4 col-12 sidebar">
+          {% include 'components/soru/search.html' %}
+
+          <!-- End widget -->
+
+          <div class="widget category-widget wow fadeIn">
+            <h3 class="widget-title">Questions Number</h3>
+            {% include 'components/soru/questions-number.html' %}
+          </div>
+          <!-- End widget -->
+
+          <div class="widget popular-posts-widget wow fadeIn">
+            <h3 class="widget-title">Tags</h3>
+            {% include 'components/soru/tags.html' %}
+          </div>
+          <!-- End widget -->
+        </div>
+        <!-- End Col -->
+      </div>
+    </div>
   </section>
+
   <!-- End Main Banner -->
 
   <!-- Start Blog -->
